@@ -39,6 +39,7 @@ header a {
 h1 {
     font-family: 'Oswald', sans-serif;
 }
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -52,15 +53,32 @@ h1 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Navbar styles with dropdown toggle */
 nav {
-    position:absolute;
+    position: absolute;
     background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 /* Main content */
 main {
     background-color: lightblue;
