@@ -173,22 +173,7 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    #hero {
-        height: 100vh; /* full height again on mobile */
-        background-position: center center; /* center focus for mobile */
-    }
-}
 
-/* Optional: Ensure body/html take full height */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-    
-}
     #menu {
         display: flex;
     }
@@ -207,19 +192,19 @@ html, body {
         margin: 0 0.5rem;
     }
 
+    /* Main content */
+    main {
+        /* Make main element take up any surplus space to push footer down */
+        flex: 1 0 auto;
+        margin-top: 79px;
+    }
 
-/* Main content */
-main {
-    
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 79px;
-
- /* Hero image */
+    /* Hero image */
     #cover-text {
         width: 300px;
         right: 50px;
     }
+
     /* Reasons section */
     #benefits-physical,
     #benefits-mental {
@@ -237,12 +222,16 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+}
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
-    @media screen and (min-width: 1200px) {    
+}
+
+@media screen and (min-width: 1200px) {    
     /* Reasons section */
     #benefits {
         display: flex;
@@ -270,9 +259,22 @@ main {
     }
 }
 
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 100vh; /* full height again on mobile */
+        background-position: center center; /* center focus for mobile */
+    }
+}
+
+/* Optional: Ensure body/html take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 /* Footer */
 footer {
     background-color: orange;
-}
 }
