@@ -82,6 +82,36 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+/* Main content */
+main {
+    
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+/* Hero section */
+#hero {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -125,6 +155,14 @@ nav {
         margin: 0 0.5rem;
     }
 }
+
+/* Main content */
+main {
+    
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 79px;
+
  /* Hero image */
     #cover-text {
         width: 300px;
@@ -137,37 +175,9 @@ nav {
     }
 }
 
-/* Main content */
-main {
-    
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 79px;
-}
-/* Hero section */
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
-    position: relative;
-}
-#cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(241, 109, 107, .7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-}
-
-#cover-text > h2, #cover-text > h3 {
-    color: #ffffff;
-}
 
 /* Footer */
 footer {
     background-color: orange;
+}
 }
